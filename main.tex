@@ -1,0 +1,143 @@
+%/* vim: set filetype=latex */
+
+% Demo project. Uses Komascript >=3.0. 
+% which is not included in texlive 2008
+% (1) copy dist to texlive/texmf-local 
+% (2) texhash
+%\documentclass[BCOR=8.5mm,DIV=calc,open=right,pagesize=auto,a5paper]{scrbook}
+%\documentclass[12pt,BCOR=8.5mm]{scrbook}
+\documentclass[12pt,BCOR=8.5mm]{scrartcl}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+\title{Amateurfunkprüfung}
+\subtitle{Prüfungsteil "`Betriebstechnik und Vorschriften"'}
+\author{Mathias Dalheimer \texttt{<md@gonium.net>}}
+%% PDF SETUP
+\usepackage[pdftex, bookmarks, colorlinks, breaklinks,
+pdftitle=\title,pdfauthor={Mathias Dalheimer},plainpages=false]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue,plainpages=false} 
+
+\clubpenalty=3000 % adjust for widows and orphans 10000 is max
+\widowpenalty=3000 % adjust for widows and orphans 10000 is max
+%% Font Adjustments
+\usepackage[LY1]{fontenc}
+\usepackage[T1]{fontenc}
+%\usepackage{adobegaramond}
+%\usepackage{gillsans}
+%\renewcommand{\rmdefault}{HoeflerText}
+
+% Use URW Garamond No. 8 as a default font. (getnonfreefonts)
+%\usepackage[urw-garamond]{mathdesign}
+%\renewcommand{\rmdefault}{ugm}
+% Optima as a sans serif font.
+%\renewcommand*\sfdefault{uop}
+
+\newcommand*\imgwidth{0.8\textwidth}
+
+\usepackage{ifthen}
+\newboolean{InternalVersion}
+\setboolean{InternalVersion}{true}
+%\setboolean{InternalVersion}{false}
+
+\usepackage{listings}  
+\lstset{numbers=left, numberstyle=\tiny,numbersep=5pt}  
+\lstset{language=Xml, basicstyle=\small, frame=shadowbox}  
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+%\numberwithin{algorithm}{chapter} 
+%\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage[protrusion=true,expansion=true]{microtype}
+
+%% Page Header
+\usepackage{scrpage2}
+
+% Recalculate page setup based on new font.
+%\KOMAoptions{DIV=last}
+%\KOMAoptions{draft=true}
+
+% Versals. 
+%\usepackage{lettrine}
+% Misc packages
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{todonotes}
+%\usepackage[english]{babel}
+\usepackage{ngerman}
+\usepackage{blindtext}
+\usepackage{subfigure}
+
+\hyphenation{scho-oner Sur-vivor ap-pen-dix
+Strom-ver-brauchs-informationen}
+
+\usepackage{marvosym} % bei der Schrift enthalten
+\newcommand*\euro{\textup{\EUR}}
+
+
+%% Chapterstyle
+%\renewcommand*{\chapterformat}{---\hskip.5cm\thechapter\hskip.5cm---}
+%\KOMAoption{headings}{small,twolinechapter}
+%\setkomafont{chapter}{\Large\sffamily\centering}
+%\setkomafont{dictum}{\normalfont}
+%\renewcommand*{\dictumwidth}{.8\textwidth}
+
+%% Main.
+\begin{document}
+\maketitle
+%\clearscrheadfoot
+%\automark[chapter]{section}
+%\lehead[]{\pagemark\hskip.5cm\vrule\hskip.5cm\title}
+%\rohead[]{\headmark\hskip.5cm\vrule\hskip.5cm\pagemark} 
+\title
+%\pagestyle{scrplain}
+%\begin{titlepage}
+%\input{frontpage}
+%\end{titlepage}
+%% frontmatter
+%%\input{frontmatter}
+%%\parindent.0cm
+%%\parskip.4cm
+%%\input{pagetwo}
+%\parindent.4cm
+%\parskip.0cm
+%\pagestyle{scrheadings}
+%
+\section{Internationales Buchstabieralphabet}
+
+\begin{tabular}[h]{|l|l|}
+  \hline
+  Buchstabe & Schlüsselwort \\
+  \hline
+  A & Alpha \\
+  B & Bravo \\
+  C & Charlie \\
+  D & Delta \\
+  E & Echo \\
+  F & Foxtrott \\
+  G & Golf \\
+  H & Hotel \\
+  I & India \\
+  J & Juliett \\
+  K & Kilo \\
+  L & Lima \\
+  M & Mike \\
+  N & November \\
+  O & Oscar \\
+  P & Papa \\
+  Q & Quebec \\
+  R & Romeo \\
+  S & Sierra \\
+  T & Tango \\
+  U & Uniform \\
+  V & Victor \\
+  W & Whiskey \\
+  X & X-Ray \\
+  Y & Yankee \\
+  Z & Zulu \\
+  \hline
+\end{tabular}
+
+\end{document}
+
