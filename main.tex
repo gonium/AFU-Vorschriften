@@ -6,7 +6,7 @@
 % (2) texhash
 %\documentclass[BCOR=8.5mm,DIV=calc,open=right,pagesize=auto,a5paper]{scrbook}
 %\documentclass[12pt,BCOR=8.5mm]{scrbook}
-\documentclass[12pt,BCOR=8.5mm]{scrartcl}
+\documentclass[11pt,BCOR=8.5mm]{scrartcl}
 
 % Use utf-8 encoding for foreign characters
 \usepackage[utf8]{inputenc}
@@ -106,9 +106,12 @@ Strom-ver-brauchs-informationen}
 %
 \section{Internationales Buchstabieralphabet}
 
+\begin{table}[h]
+  \centering
 \begin{tabular}[h]{|l|l|}
   \hline
   Buchstabe & Schlüsselwort \\
+  \hline
   \hline
   A & Alpha \\
   B & Bravo \\
@@ -138,6 +141,62 @@ Strom-ver-brauchs-informationen}
   Z & Zulu \\
   \hline
 \end{tabular}
+\end{table}
+
+\section{Der Q-Schlüssel}
+
+Alle Zeiten in UTC! Nur im Telegrafiefunkverkehr verwenden! Skala 1-5: 1
+entspricht wenig, 5 entspricht viel.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{| l | p{4.3cm} | p{4.3cm} | l |}
+  \hline
+  Q-Code & ! & ? & Merke \\
+  \hline
+  \hline
+  QRK & Die Verständlichkeit ihrer Zeichen ist (1-5) & Wie ist die
+  Verständlichkeit meiner Zeichen? & Verständlichkeit \\
+  \hline
+  QRM & Ich werde gestört (1-5) & Werden Sie gestört? & Matsch \\
+  \hline
+  QRN & Ich werde durch atmosphärische Störungen beeinträchtigt (1-5) &
+  Werden sie durch atmosphärische Störungen beeinträchtigt? &
+  Noise \\
+  \hline
+  QRO & Erhöhen Sie die Sendeleistung & Soll ich die
+  Sendeleistung erhöhen? & Output \\
+  \hline
+  QRP & Verringern Sie die Sendeleistung & Soll ich die
+  Sendeleistung vermindern? & Pipi \\
+  \hline
+  QRT & Stellen Sie die Übermittlung ein. & Soll ich die
+  Übermittlung einstellen? & Terminate \\
+  \hline
+  QRV & Ich bin bereit & Sind Sie bereit? & Bin bereit \\
+  \hline
+  QRX & Ich werde Sie um \ldots Uhr wieder rufen. & Wann werden
+  Sie mich wieder rufen? & Pause \\
+  \hline
+  QRZ & Sie werden von \ldots gerufen & Von wem werde ich
+  gerufen? & Wer ruft? \\
+  \hline
+  QSB & Die Stärke Ihrer Zeichen schwankt. & Schwankt die Stärke
+  meiner Zeichen? & Bold \\
+  \hline
+  QSL & Ich gebe Ihnen Empfangsbestätigung. & Können Sie mir
+  Empfangsbestätigung geben? & \\
+  \hline
+  QSO & Ich kann mit \ldots unmittelbar verkehren. & Können Sie
+  mit \ldots verkehren? & \\
+  \hline
+  QSY & Gehen Sie auf eine andere Frequenz über & Soll ich auf
+  eine andere Frequenz übergehen? & \\
+  \hline
+  QTH & Mein Standort ist \ldots Breite, \ldots Länge & Welches
+  ist Ihr Standort? & Home \\
+  \hline
+\end{tabular}
+\end{table}
 
 \end{document}
-
