@@ -25,7 +25,7 @@ view: pdf
 
 clean:
 	-rm -f *~
-	-rm -f $(PDF)
+#	-rm -f $(PDF)
 	-rm -f $(AUX)
 	-rm -f *.log
 	-rm -f *.bbl
