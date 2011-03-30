@@ -34,7 +34,7 @@ pdftitle=\title,pdfauthor={Mathias Dalheimer},plainpages=false]{hyperref}
 %\renewcommand*\sfdefault{uop}
 
 \newcommand*\imgwidth{0.8\textwidth}
-
+\usepackage{longtable}
 \usepackage{ifthen}
 \newboolean{InternalVersion}
 \setboolean{InternalVersion}{true}
@@ -334,6 +334,109 @@ Vorschriften für Geräte (Handel/Inbetriebnahme).
 	Experimenierfunkdienst ist.
 \end{enumerate}
 
+\section{Landeskenner}\label{sec:landeskenner}
+%\begin{table}[h]
+  \begin{longtable}{| l | l | l |}
+  \hline
+  Kenner & Land & Hint \\
+  \hline
+  \hline
+  \endhead
+  C3 & Andorra & \\
+  \hline
+  CT & Portugal & \\
+  \hline
+  DL & Deutschland (DA-DR) & \\
+  \hline
+  EA & Spanien & EspanA\\
+  \hline
+  EI & Irland & Eire \\
+  \hline
+  EM & Ukraine & \\
+  \hline
+  ES & Estland & \\
+  \hline
+  F & Frankreich & \\
+  \hline
+  G & England / Großbritanien & \\
+  \hline
+  GM & Schottland & \\
+  \hline
+  HA & Ungarn & \\
+  \hline
+  HB & Schweiz & \\
+  \hline
+  HB0 & Lichtenstein & Bei der Schweiz \\
+  \hline
+  HV & Vatikan & Heiliger Vater \\
+  \hline
+  I & Italien & \\
+  \hline
+  LA & Norwegen & Lachse \\
+  \hline
+  LX & Luxemburg & \\
+  \hline
+  LY & Litauen & \\
+  \hline
+  LZ & Bulgarien & \\
+  \hline
+  M & England, Großbritanien & \\
+  \hline
+  OE & Österreich & \\
+  \hline
+  OH & Finnland & \\
+  \hline
+  OK & Tschechien & \\
+  \hline
+  OM & Slowakei & \\
+  \hline
+  ON & Belgien & \\
+  \hline
+  OY & Färöer Inseln & \\
+  \hline
+  OZ & Dänemark & \\
+  \hline
+  PA & Niederlande & \\
+  \hline
+  UA & Russland & \\
+  \hline
+  SM & Schweden & \\
+  \hline
+  SP & Polen & \\
+  \hline
+  SV & Griechenland & \\
+  \hline
+  S5 & Slovenien & \\
+  \hline
+  TA & Türkei & \\
+  \hline
+  TF & Island & \\
+  \hline
+  YL & Lettland & \\
+  \hline
+  YO & Rumänien & \\
+  \hline
+  YU & Serbien & \\
+  \hline
+  Z3 & Albanien & \\
+  \hline
+  3A & Monaco & \\
+  \hline
+  4U & Vereinte Nationen & For you \\
+  \hline
+  9A & Kroatien & \\
+  \hline
+  9H & Malta & \\
+  \hline
+\end{longtable}
 
+\subsection{Europakenner in der Karte}\label{sub:europakarte}
+
+\begin{figure}[htbp]
+  \begin{center}
+	\includegraphics[width=14cm]{figures/landeskenner-eu}
+	\label{fig:landeskenner-eu}
+  \end{center}
+\end{figure}
 
 \end{document}
