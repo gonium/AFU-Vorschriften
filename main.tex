@@ -658,6 +658,87 @@ selbsttätig Aussendungen zur Feldstärkebeobachtung oder zu
 Empfangsversuchen erzeugt. Der Betrieb muss angemeldet werden. Das
 IARU-Bakensystem sendet auf verschiedenen Kurzwellenfrequenzen.
 
+\section{Betriebsarten, Sendearten \& Frequenzen}\label{sec:betriebsartensendeartenfrequenzen}
 
+International ist der \emph{Frequenzbereichszuweisungsplan} maßgeblich,
+der jedoch in Deutschland durch den \emph{Frequenznutzungsplan}
+umgesetzt wird. Die deutschen Regelungen haben in Deutschland Vorrang.
+Durch die CEPT-Empfehlungen (die im Frequenznutzungsplan umgesetzt
+werden) sind die \emph{Radio Regulations} implementiert.
+
+\subsection{Sendearten}\label{sub:sendearten}
+Definiert in den RR, für die Prüfung sind nur die drei Bezeichner für
+die Sendeart (hier: normales Morsen) nötig:
+\begin{equation}
+  \underbrace{A}_{1} \underbrace{1}_{2} \underbrace{A}_{3}
+\end{equation}
+\begin{enumerate}
+  \item Modulationsart:
+
+      \begin{tabular}{|l|l|}
+        \hline
+        N & Unmodulierter Träger\\
+        A & Zweiseitenband-AM\\
+        C & Restseitenband\\
+        F & Frequenzmodulation\\
+        J & SSB\\
+        P & Pulsmodulation\\
+        \hline
+      \end{tabular}
+  \item Signalart:
+
+      \begin{tabular}{|l|l|}
+        \hline
+        0 & Kein moduliertes Signal\\
+        1 & Kanal mit digitaler Information \emph{ohne}
+        moduliertem Hilfsträger\\
+        2 & Kanal mit digitaler Information \emph{mit}
+        moduliertem Hilfsträger\\
+        3 & Kanal mit analoger Information\\
+        \hline
+      \end{tabular}
+  \item Betriebsart:
+
+      \begin{tabular}{|l|l|}
+        \hline
+        N & Keine Information\\
+        A & Morsetelegrafie CW\\
+        B & Funkfernschreiben RTTY\\
+        C & Faksimile FAX\\
+        D & Datenübertragung, Fernsteuerung\\
+        E & Sprechfunk\\
+        F & Fernsehen, Video\\
+        \hline
+      \end{tabular}
+\end{enumerate}
+
+\subsection{Frequenzbereiche}\label{sub:frequenzbereiche}
+Relevant für diesen Fragebereich sind nur die Anfangs- und Endfrequenzen
+der Bänder. Die Mittenfrequenz kann mittels
+\begin{equation}
+  f[MHz] = \frac{300}{\lambda[m]}
+\end{equation}
+bestimmt werden. Übersicht:
+
+\begin{tabular}{|l|l|}
+        \hline
+        Band & Frequenzbereich \\
+        \hline
+        160m & 1810 - 2000 kHz\\
+        80m & 3500 - 3800 kHz \\
+        40m & 7000 - 7200 kHz \\
+        30m & 10100 - 10150 kHz \\
+        20m & 14000 - 14350 kHz \\
+        17m & 18068 - 18168 kHz \\
+        15m & 21000 - 21450 kHz \\
+        12m & 24890 - 24990 kHz \\
+        10m & 28 - 29,7 MHz \\
+        6m & 50,08 - 51 MHz \\
+        2m & 144 - 146 MHz \\
+        70cm & 430 - 440 MHz \\
+        23cm & 1240 - 1300 MHz \\
+        13cm & 2320 - 2450 MHz \\
+        \hline
+      \end{tabular}
 
 \end{document}
